@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sérgio de Souza Menezes | SSM Innovations</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== BLOCO TOPO: HEADER + ROBÔ (fundo único) ========== -->
+  <div class="bloco-topo">
+
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+
+      <div class="header-top">
+        <!-- Logo canto esquerdo superior -->
+        <div class="logo-wrap">
+          <img src="img/logo.png" alt="SSM Innovations Logo" class="logo-img" />
+        </div>
+
+        <!-- Nav com 3 links -->
+        <nav class="nav" aria-label="Menu principal">
+          <ul class="nav-list">
+            <li><a href="#historia"  class="nav-link">Minha história</a></li>
+            <li><a href="#contato"   class="nav-link">Entre em contato</a></li>
+            <li><a href="#ajuda"     class="nav-link">Posso te ajudar?</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Hero: h1 + nome -->
+      <div class="header-hero">
+        <div class="hero-text">
+          <h1 class="hero-slogan">Soluções para o seu site.</h1>
+          <p  class="hero-name">Sérgio de Souza Menezes</p>
+        </div>
+      </div>
+
+    </header>
+
+    <!-- Robô animado -->
+    <section class="robot-section" aria-label="Animação do robô">
+      <div class="robot-track">
+        <img src="img/robot.png" alt="Robô SSM Innovations" class="robot-img" id="robot" />
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <main id="main">
+
+
+    <!-- Minha Formação -->
+    <section class="section formacao-section">
+      <h2 class="section-title">Minha Formação</h2>
+      <ul class="formacao-list">
+        <li><span class="tag">&lt;/&gt;</span> Programador Web</li>
+        <li><span class="tag">&lt;/&gt;</span> HTML</li>
+        <li><span class="tag">&lt;/&gt;</span> CSS</li>
+        <li><span class="tag">&lt;/&gt;</span> JavaScript</li>
+        <li><span class="tag">&lt;/&gt;</span> Python</li>
+        <li><span class="tag">&lt;/&gt;</span> Inteligência Artificial</li>
+      </ul>
+    </section>
+
+    <!-- Minha História -->
+    <section class="section historia-section" id="historia">
+      <h2 class="section-title">Minha História</h2>
+      <p class="historia-texto">
+        Meu nome é Sérgio de Souza Menezes. Sempre procurei novos conhecimentos,
+        embora alguns tenham vindo tardios. Levei uma vida trabalhando na construção civil,
+        sem estudos e sem formação profissional, mas com muita curiosidade e vontade de aprender.
+        Sempre me interessei por tecnologias e inovações. Tive a oportunidade, aos 42 anos,
+        de fazer o curso de Encanador Industrial, e foi quando comecei a trilhar novos horizontes.
+        Aos 59 anos, tive uma nova oportunidade: fui cursar Auxiliar Administrativo,
+        Informática Básica, Ensino Médio e Programador Web. Com muito esforço e dedicação,
+        estou trilhando mais uma vez novos caminhos, porém agora conto com o apoio de
+        excelentes professores. Espero me firmar nesta nova etapa profissional e,
+        novamente, expandir meus conhecimentos.
+      </p>
+      <p class="historia-agradecimento">
+        <strong>Meus agradecimentos aos professores:</strong><br />
+        Prof. Wanessa — curso de Auxiliar Administrativo<br />
+        Prof. Gabriel — cursos de Informática Básica e Programador Web
+      </p>
+    </section>
+
+    <!-- Carrossel -->
+    <section class="section carrossel-section">
+      <h2 class="section-title">Portfólio</h2>
+
+      <!-- wrapper com position:relative para os botões absolute -->
+      <div id="carrossel">
+
+        <div id="carrosselTrack">
+          <div class="slide"><img src="img/minha_lp.png" alt="Minha Landing Page" /></div>
+          <div class="slide"><img src="img/lp_02.png"    alt="Landing Page 02" /></div>
+          <div class="slide"><img src="img/lp_01.jpg"    alt="Landing Page 01" /></div>
+        </div>
+
+        <button id="prevBtn" aria-label="Slide anterior">&#8249;</button>
+        <button id="nextBtn" aria-label="Próximo slide">&#8250;</button>
+
+        <div id="carrosselDots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot"        data-index="1"></span>
+          <span class="dot"        data-index="2"></span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Áudio -->
+    <section class="section audio-section">
+      <h2 class="section-title">🎧 Ouça</h2>
+      <div class="audio-container">
+
+        <div class="audio-player-card">
+          <div class="audio-icon-wrap">
+            <span class="audio-play-icon">♪</span>
+          </div>
+          <p class="audio-play-text">Toque para ouvir</p>
+
+          <audio id="audioTag" controls style="width:100%;max-width:600px;display:block;margin:0 auto;">
+            <source src="audio/musica.mp3" type="audio/mpeg" />
+            Seu navegador não suporta áudio HTML5.
+          </audio>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+
+    <div class="footer-inner">
+
+      <!-- Formulário Fale Comigo -->
+      <div class="footer-form-wrap" id="contato">
+        <form
+          class="footer-form"
+          id="formContato"
+          novalidate
+          aria-label="Formulário de contato"
+        >
+          <fieldset class="footer-fieldset">
+            <legend class="fieldset-legend">Fale Comigo</legend>
+
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Seu nome completo"
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(00) 00000-0000"
+                autocomplete="tel"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seu@email.com"
+                autocomplete="email"
+              />
+            </div>
+
+            <!-- Textarea com id="ajuda" para o link do nav -->
+            <div class="form-group">
+              <label for="ajuda">Posso te ajudar?</label>
+              <textarea
+                id="ajuda"
+                name="mensagem"
+                rows="5"
+                placeholder="Escreva sua mensagem aqui..."
+              ></textarea>
+            </div>
+
+            <div class="form-btns">
+              <button type="submit" class="btn btn-primary"   id="btnEnviar">Enviar</button>
+              <button type="reset"  class="btn btn-secondary" id="btnApagar">Apagar</button>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+
+      <!-- Contatos e QR Code -->
+      <div class="footer-contacts">
+
+        <div class="qr-wrap">
+          <img src="img/qrcode.png" alt="QR Code SSM Innovations — escaneie para contato" class="qr-img" />
+          <p class="qr-label">Escaneie e fale comigo</p>
+        </div>
+
+        <div class="contact-icons">
+          <a
+            href="https://wa.me/5531986299617"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-icon whatsapp-icon"
+            aria-label="Contato via WhatsApp"
+          >
+            <img src="img/whatsapp.jpg" alt="WhatsApp" />
+            <span>(031) 98629-9617</span>
+          </a>
+
+          <a
+            href="mailto:vindieselmenezes@gmail.com"
+            class="contact-icon email-icon"
+            aria-label="Enviar e-mail"
+          >
+            <img src="img/email.jpg" alt="E-mail" />
+            <span>vindieselmenezes@gmail.com</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-copy">
+      <p>&copy; 2025 SSM Innovations &ndash; Landing Page Solutions. Todos os direitos reservados.</p>
+    </div>
+
+  </footer>
+
+  <!-- Botão fixo: voltar ao topo -->
+  <button class="btn-topo" id="btnTopo" aria-label="Voltar ao topo da página">&#8679;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
